@@ -8,7 +8,7 @@ dependencies = [
  "cortex-m 0.1.6 (registry+https://github.com/rust-lang/crates.io-index)",
  "embedded_stm32f7 0.1.0 (git+https://github.com/embed-rs/embedded_stm32f7.git)",
  "linked_list_allocator 0.4.1 (registry+https://github.com/rust-lang/crates.io-index)",
- "net 0.1.0 (git+https://github.com/embed-rs/net.git)",
+ "net 0.1.0 (git+https://github.com/embed-rs/net.git?branch=tcp)",
  "r0 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "rusttype 0.2.1 (git+https://github.com/phil-opp/rusttype.git?branch=no_std)",
  "spin 0.4.5 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -90,8 +90,9 @@ dependencies = [
 [[package]]
 name = "net"
 version = "0.1.0"
-source = "git+https://github.com/embed-rs/net.git#bfa81ea36d9433730ae0339ee92903f541c1b6dd"
+source = "git+https://github.com/embed-rs/net.git?branch=tcp#82eb28a11280abcd86b709ae5ac6f35d2a05fde6"
 dependencies = [
+ "bit_field 0.7.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "byteorder 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
@@ -161,7 +162,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 "checksum embedded 0.3.0 (git+https://github.com/embed-rs/embedded-rs.git)" = "<none>"
 "checksum embedded_stm32f7 0.1.0 (git+https://github.com/embed-rs/embedded_stm32f7.git)" = "<none>"
 "checksum linked_list_allocator 0.4.1 (registry+https://github.com/rust-lang/crates.io-index)" = "019e577c25a9eca6aacc93ae20537a4653609be6cf7c68d16532be2f8a94e438"
-"checksum net 0.1.0 (git+https://github.com/embed-rs/net.git)" = "<none>"
+"checksum net 0.1.0 (git+https://github.com/embed-rs/net.git?branch=tcp)" = "<none>"
 "checksum nodrop 0.1.9 (registry+https://github.com/rust-lang/crates.io-index)" = "52cd74cd09beba596430cc6e3091b74007169a56246e1262f0ba451ea95117b2"
 "checksum odds 0.2.25 (registry+https://github.com/rust-lang/crates.io-index)" = "c3df9b730298cea3a1c3faa90b7e2f9df3a9c400d0936d6015e6165734eefcba"
 "checksum once 0.3.2 (registry+https://github.com/rust-lang/crates.io-index)" = "1ae5868dd493edd93941c182240a2c019dfe84c7d2de51d4659da32e58688ce9"
